@@ -1,0 +1,54 @@
+body{
+    background-color: #121a49;
+    background-image: url(../img/pack-man-bg.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: Arial;
+    text-align: center;
+}
+
+@font-face{
+    font-family: pixle;
+    src: url(../Fonts/Minecrafter.Reg.ttf);
+}
+
+@font-face{
+    font-family: montserrat;
+    src: url(../Fonts/Montserrat-Regular.otf);    
+}
+
+#nav-toggler{
+    position: absolute;
+    height: 5%;
+    width: 3%;
+    background: rgba(255,255,255,0.7);
+}
+
+h1{
+    color: #00b4ff;
+    font-size: 25px;
+    font-family: montserrat;
+}
+
+h2{
+    color: #ffc000;
+    text-shadow: -5px 5px #ff5400;
+    font-size: 105px;
+    font-family: pixle;
+}
+
+@media only screen and (max-width: 600px) {
+    h1{
+        font-size: 15px;
+    }
+    
+    h2{
+        font-size: 45px;
+    }
+    
+    #nav-toggler{
+        height: 8%;
+        width: 10%;
+    }
+  }
