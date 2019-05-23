@@ -71,11 +71,23 @@ h2{
     font-family: pixle;
     margin-bottom: 2%;
 }
+h3{color: #ffc000;
+    text-shadow: -5px 5px #ff5400;
+    font-size: 30px;
+    font-family: pixle;
+    margin-bottom: 2%;
+}
+
+h4{color: #00b4ff;
+    font-size: 25px;
+    font-family: montserrat;}
 
 p{
    color: #00b4ff;
     font-size: 25px;
-    float: left;
+    text-align: left;
+    margin-right: 10px;
+     margin-left: 10px
 }
 
 .slideshow{
@@ -136,3 +148,19 @@ p{
         font-size: 30px;
     }
   }
+
+/*udstillingside*/
+.column {
+  float: left;
+  width: 33.33%;
+}
+@media screen and (max-width: 500px) {
+  .column {
+    width: 100%;
+  }
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
