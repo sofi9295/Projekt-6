@@ -68,12 +68,16 @@ h2{
     color: #00b4ff;
     font-size: 25px;
     float: left;
-    text-align: left
 }
-
+h3{
+   color: #00b4ff;
+    font-size: 25px;
+    text-align: left;
+}
 .slideshow{
     width: 65%;
     height: 35%;
+    float:right
 
 }
 
