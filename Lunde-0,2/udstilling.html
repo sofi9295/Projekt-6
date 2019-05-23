@@ -23,6 +23,15 @@
         <h1>Udstillinger</h1>
         <h2>Retro-Arkaden</h2>
         
+<div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">Se andre udstillinger</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="#home">Nuværede</a>
+    <a href="#about">Næste</a>
+    <a href="#contact">Tidligere</a>
+  </div>
+</div>
+        
         <div class="row">
           <div class="column">
             <img src="/Lunde-0,2/img/Spillemaskiner.jpg" alt="spillemaskine" width="250px" >
@@ -41,12 +50,33 @@
              <div class="column">
               <img src="/Lunde-0,2/img/masterpiece-vr-sculpt-810x500.png" alt="vr_spil"
               width="250px">
-              <h3>Da vi var smaa</h3>
+              <h3>En anden virkelighed</h3>
               <h4>September-December</h4>
               <p>Dukke Lise siger god-dag og Bamsen Bim-se inviterer til et kram. Udstillingen er fuld af legetøj fra de gamle dage. Både børn og voksne er velkommen til at lege med!</p>
+              
             </div>
-          </div>
-            
+            </div>
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
         <script src="java/Nav-toggle.js"></script>
     </body>
 </html>
